@@ -1,3 +1,5 @@
+import { Reveal } from "./Reveal";
+
 export function SectionHead({
   title,
   intro,
@@ -6,13 +8,9 @@ export function SectionHead({
   intro: string;
 }) {
   return (
-    <div className="mb-[30px] max-w-[560px] phone:mb-[38px] tablet:mb-[52px]">
-      <h2 className="font-display text-[27px] font-semibold leading-[1.2] tracking-[-0.01em] phone:text-[32px]">
-        {title}
-      </h2>
-      <p className="mt-3.5 text-[14.5px] leading-[1.6] text-muted phone:text-[15.5px]">
-        {intro}
-      </p>
-    </div>
+    <Reveal className="mb-head max-w-[560px]">
+      <h2 className="font-display text-title font-semibold">{title}</h2>
+      <p className="mt-3.5 text-lead text-muted">{intro}</p>
+    </Reveal>
   );
 }

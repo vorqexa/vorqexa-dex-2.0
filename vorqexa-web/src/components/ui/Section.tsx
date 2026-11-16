@@ -9,10 +9,7 @@ export function Section({
   children: ReactNode;
 }) {
   return (
-    <section
-      id={id}
-      className="relative z-[1] scroll-mt-20 py-[62px] phone:py-[76px] tablet:py-24"
-    >
+    <section id={id} className="relative z-[1] py-section">
       <Container>{children}</Container>
     </section>
   );

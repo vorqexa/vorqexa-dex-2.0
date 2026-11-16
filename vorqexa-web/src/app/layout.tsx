@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   title: "Vorqexa — Perpetual Trading, Built Simply",
   description:
     "A focused perpetual trading platform designed to make the trading experience clear, simple, and easy to use.",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#030504",
+  colorScheme: "dark",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

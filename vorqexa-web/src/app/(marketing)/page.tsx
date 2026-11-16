@@ -3,6 +3,7 @@ import { Hero } from "@/components/marketing/Hero";
 import { Features } from "@/components/marketing/Features";
 import { Steps } from "@/components/marketing/Steps";
 import { Infrastructure } from "@/components/marketing/Infrastructure";
+import { Chains } from "@/components/marketing/Chains";
 import { CtaBand } from "@/components/marketing/CtaBand";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Features />
       <Steps />
       <Infrastructure />
+      <Chains />
       <CtaBand />
     </>
   );

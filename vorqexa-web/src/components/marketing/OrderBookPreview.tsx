@@ -55,7 +55,7 @@ function BookRow({ row, side }: { row: Row; side: "ask" | "bid" }) {
     <div className="relative flex justify-between px-3.5 py-[5px] font-mono text-[10px] min-[381px]:text-[11px] phone:px-[18px] phone:text-[13px]">
       <span
         aria-hidden="true"
-        className={`absolute inset-y-0 z-0 ${isAsk ? "right-0 bg-ask/8" : "left-0 bg-mint/8"}`}
+        className={`bar-grow absolute inset-y-0 z-0 ${isAsk ? "right-0 origin-right bg-ask/8" : "left-0 origin-left bg-mint/8"}`}
         style={{ width: `${pct}%` }}
       />
       <span className={`relative z-[1] ${isAsk ? "text-ask" : "text-mint"}`}>
@@ -72,7 +72,8 @@ export function OrderBookPreview() {
     <div
       role="group"
       aria-label="Order book preview with example data"
-      className="mx-auto w-full max-w-[720px] min-w-0 overflow-hidden rounded-[10px] border border-line bg-panel tablet:mx-0 tablet:max-w-none"
+      style={{ "--d": "200ms" } as React.CSSProperties}
+      className="anim-fade-up mx-auto w-full max-w-[720px] min-w-0 overflow-hidden rounded-[10px] border border-line bg-panel tablet:mx-0 tablet:max-w-none"
     >
       <div className="flex items-center justify-between gap-3 border-b border-line p-3.5 phone:px-[18px] phone:py-4">
         <div className="flex min-w-0 flex-wrap items-center gap-2 text-[14.5px] font-semibold">

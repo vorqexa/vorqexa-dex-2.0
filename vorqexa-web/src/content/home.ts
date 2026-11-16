@@ -1,5 +1,4 @@
 export const hero = {
-  kicker: "Vorqexa",
   title: "Trade Perpetuals. Your Way.",
   lead: "A focused perpetual trading platform designed to make the trading experience clear, simple, and easy to use.",
   stats: [
