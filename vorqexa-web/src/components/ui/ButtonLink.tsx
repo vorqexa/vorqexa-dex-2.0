@@ -16,7 +16,7 @@ const base =
 
 const variants = {
   primary:
-    "bg-mint text-on-mint hover:-translate-y-px hover:shadow-[0_0_0_4px_rgba(182, 250, 208,0.28)]",
+    "bg-mint text-on-mint hover:-translate-y-px hover:shadow-[0_0_0_4px_rgba(182,250,208,0.28)]",
   ghost: "border-line bg-transparent text-fg hover:border-mint hover:text-mint",
 };
 
