@@ -9,6 +9,7 @@
   --color-on-mint: #04140d;
   --color-fg: #edf5f0;
   --color-muted: #7c9089;
+  --color-prose: #a7b5b1;
   --color-ask: #e28a7f;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
@@ -34,6 +35,11 @@
   --text-lead--line-height: 1.65;
   --text-copy: clamp(0.875rem, 0.85rem + 0.15vw, 0.9375rem);
   --text-copy--line-height: 1.65;
+
+  /* Corner radii (circular fallback values; larger squircle values further down) */
+  --radius-control: 8px;
+  --radius-card: 12px;
+  --radius-panel: 14px;
 
   /* Fluid spacing */
   --spacing-gutter: clamp(1rem, 0.5rem + 2vw, 2rem);
@@ -93,9 +99,6 @@ body::before {
 @keyframes fade-up {
   from { opacity: 0; transform: translateY(14px); }
 }
-@keyframes fade-in {
-  from { opacity: 0; }
-}
 @keyframes grow-x {
   from { transform: scaleX(0); }
 }
@@ -106,10 +109,6 @@ body::before {
 @media (prefers-reduced-motion: no-preference) {
   .anim-fade-up {
     animation: fade-up 0.8s var(--ease-out) both;
-    animation-delay: var(--d, 0ms);
-  }
-  .anim-fade-in {
-    animation: fade-in 1.4s ease-out both;
     animation-delay: var(--d, 0ms);
   }
   .bar-grow {
@@ -178,4 +177,28 @@ body::before {
   align-items: center;
   gap: var(--chain-gap);
   padding-right: var(--chain-gap);
+}
+
+/* Squircle corners ------------------------------------------------------------
+   Where the browser supports `corner-shape` (Chrome, Edge, Opera, Samsung
+   Internet), every rounded element gets superellipse corners. A squircle needs
+   a larger radius to read as equally round, so the radius tokens grow too.
+   Other browsers keep ordinary circular corners with the smaller radii above.
+   Circles and pills (.rounded-full) stay truly round. */
+@supports (corner-shape: squircle) {
+  :root {
+    --radius-control: 14px;
+    --radius-card: 24px;
+    --radius-panel: 34px;
+  }
+
+  *,
+  ::before,
+  ::after {
+    corner-shape: squircle;
+  }
+
+  .rounded-full {
+    corner-shape: round;
+  }
 }

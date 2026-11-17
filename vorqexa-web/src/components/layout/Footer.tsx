@@ -61,10 +61,6 @@ export function Footer() {
           {siteConfig.tagline}
         </p>
       </Container>
-
-      <p className="mt-[18px] text-center text-xs leading-normal text-fg/55">
-        Underlying trading infrastructure provided by Orderly Network.
-      </p>
     </footer>
   );
 }

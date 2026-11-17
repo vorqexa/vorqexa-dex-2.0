@@ -6,7 +6,7 @@ export function Infrastructure() {
   return (
     <Section id="infrastructure">
       <Reveal>
-        <div className="flex flex-col items-start gap-7 rounded-[10px] border border-line bg-panel px-5 py-6 phone:p-[30px] tablet:flex-row tablet:flex-wrap tablet:items-center tablet:justify-between tablet:gap-6 tablet:px-10 tablet:py-9">
+        <div className="flex flex-col items-start gap-7 rounded-card border border-line bg-panel px-5 py-6 phone:p-[30px] tablet:flex-row tablet:flex-wrap tablet:items-center tablet:justify-between tablet:gap-6 tablet:px-10 tablet:py-9">
           <div>
             <h3 className="font-display text-lg font-semibold tablet:text-[19px]">
               {infrastructure.heading}

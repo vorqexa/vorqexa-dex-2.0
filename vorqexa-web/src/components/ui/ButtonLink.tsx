@@ -11,12 +11,12 @@ type Props = {
 };
 
 const base =
-  "inline-flex items-center justify-center whitespace-nowrap rounded-[7px] border border-transparent font-semibold " +
+  "inline-flex items-center justify-center whitespace-nowrap rounded-control border border-transparent font-semibold " +
   "transition duration-200 ease-out cursor-pointer active:translate-y-px";
 
 const variants = {
   primary:
-    "bg-mint text-on-mint hover:-translate-y-px hover:shadow-[0_0_0_4px_rgba(182, 250, 208,0.28)]",
+    "bg-mint text-on-mint hover:-translate-y-px hover:shadow-[0_0_0_4px_rgba(182,250,208,0.28)]",
   ghost: "border-line bg-transparent text-fg hover:border-mint hover:text-mint",
 };
 

@@ -58,12 +58,12 @@ export const steps = {
 export const infrastructure = {
   heading: "The infrastructure behind Vorqexa",
   paragraphs: [
-    "Vorqexa is the product you use to discover markets, place trades, and manage positions. We use established third-party infrastructure for core trading functionality so we can focus on the product, interface, and user experience.",
-    "For transparency, Vorqexa uses Orderly Network as its underlying trading infrastructure.",
+    "Vorqexa is the product you use to discover markets, place trades, and manage positions.",
+    "We work with a third party for parts of our trading infrastructure, through a strategic partnership with our partners. This lets us focus on the product, the interface, and the overall trading experience.",
   ],
   columns: [
     { title: "Vorqexa", caption: "Product • Interface • Experience • Brand" },
-    { title: "Infrastructure", caption: "Underlying trading services" },
+    { title: "Infrastructure", caption: "Provided through our partners" },
   ],
 };
 

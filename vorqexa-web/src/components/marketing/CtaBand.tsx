@@ -8,7 +8,7 @@ export function CtaBand() {
   return (
     <Section>
       <Reveal>
-        <div className="rounded-xl border border-line bg-panel px-5 py-11 text-center phone:px-7 phone:py-14 tablet:px-10 tablet:py-[70px]">
+        <div className="rounded-panel border border-line bg-panel px-5 py-11 text-center phone:px-7 phone:py-14 tablet:px-10 tablet:py-[70px]">
           <h2 className="mx-auto max-w-[480px] font-display text-title font-semibold">
             {cta.heading}
           </h2>
