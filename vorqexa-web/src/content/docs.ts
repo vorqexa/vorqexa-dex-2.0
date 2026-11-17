@@ -252,7 +252,7 @@ export const docsSections: readonly DocSection[] = [
       },
       {
         type: "p",
-        text: "For transparency, the underlying trading infrastructure used by Vorqexa is provided by Orderly Network.",
+        text: "Vorqexa works with a third party for parts of its trading infrastructure, through a strategic partnership with our partners.",
       },
       {
         type: "p",
@@ -291,11 +291,11 @@ export const docsSections: readonly DocSection[] = [
           },
           {
             title: "Does Vorqexa use third-party infrastructure?",
-            text: "Yes. Vorqexa uses established third-party infrastructure for core perpetual trading functionality. Orderly Network provides the underlying trading infrastructure used by the platform.",
+            text: "Yes. We work with a third party for parts of our trading infrastructure, through a strategic partnership with our partners. This lets us focus on the product, the interface, and the overall trading experience.",
           },
           {
-            title: "Is Vorqexa the same thing as Orderly Network?",
-            text: "No. Vorqexa is the product and user-facing trading platform. Orderly Network is the underlying infrastructure provider used by Vorqexa.",
+            title: "Is Vorqexa the same as its infrastructure partner?",
+            text: "No. Vorqexa is the product and user-facing trading platform. Parts of the underlying trading infrastructure are provided by a third party through our partnerships.",
           },
           {
             title: "Does Vorqexa hold my private keys?",
@@ -400,7 +400,7 @@ export const docsSections: readonly DocSection[] = [
           },
           {
             title: "Infrastructure",
-            text: "Vorqexa uses Orderly Network as its underlying trading infrastructure. Any formal partnership or affiliation should only be described when officially confirmed.",
+            text: "Vorqexa works with a third party for parts of its trading infrastructure, through a strategic partnership with our partners.",
           },
         ],
       },
