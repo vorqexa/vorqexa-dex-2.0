@@ -45,7 +45,7 @@ function Block({ block }: { block: DocBlock }) {
           {block.items.map((step, i) => (
             <li
               key={step.title}
-              className="relative rounded-xl border border-line bg-panel py-4 pl-12 pr-4 phone:py-[19px] phone:pl-[58px] phone:pr-5"
+              className="relative rounded-panel border border-line bg-panel py-4 pl-12 pr-4 phone:py-[19px] phone:pl-[58px] phone:pr-5"
             >
               <span
                 aria-hidden="true"

@@ -8,7 +8,7 @@ export function Features() {
     <Section id="features">
       <SectionHead title={features.heading} intro={features.intro} />
       <Reveal>
-        <ul className="grid grid-cols-1 gap-px overflow-hidden rounded-[10px] border border-line bg-line tablet:grid-cols-2 desktop:grid-cols-4">
+        <ul className="grid grid-cols-1 gap-px overflow-hidden rounded-card border border-line bg-line tablet:grid-cols-2 desktop:grid-cols-4">
           {features.items.map((item, i) => (
             <li
               key={item.title}

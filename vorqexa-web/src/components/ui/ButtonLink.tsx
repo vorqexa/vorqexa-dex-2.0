@@ -11,7 +11,7 @@ type Props = {
 };
 
 const base =
-  "inline-flex items-center justify-center whitespace-nowrap rounded-[7px] border border-transparent font-semibold " +
+  "inline-flex items-center justify-center whitespace-nowrap rounded-control border border-transparent font-semibold " +
   "transition duration-200 ease-out cursor-pointer active:translate-y-px";
 
 const variants = {

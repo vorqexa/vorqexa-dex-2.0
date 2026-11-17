@@ -36,6 +36,11 @@
   --text-copy: clamp(0.875rem, 0.85rem + 0.15vw, 0.9375rem);
   --text-copy--line-height: 1.65;
 
+  /* Corner radii (circular fallback values; larger squircle values further down) */
+  --radius-control: 8px;
+  --radius-card: 12px;
+  --radius-panel: 14px;
+
   /* Fluid spacing */
   --spacing-gutter: clamp(1rem, 0.5rem + 2vw, 2rem);
   --spacing-section: clamp(3.75rem, 2.4rem + 5.5vw, 6rem);
@@ -179,4 +184,28 @@ body::before {
   align-items: center;
   gap: var(--chain-gap);
   padding-right: var(--chain-gap);
+}
+
+/* Squircle corners ------------------------------------------------------------
+   Where the browser supports `corner-shape` (Chrome, Edge, Opera, Samsung
+   Internet), every rounded element gets superellipse corners. A squircle needs
+   a larger radius to read as equally round, so the radius tokens grow too.
+   Other browsers keep ordinary circular corners with the smaller radii above.
+   Circles and pills (.rounded-full) stay truly round. */
+@supports (corner-shape: squircle) {
+  :root {
+    --radius-control: 14px;
+    --radius-card: 24px;
+    --radius-panel: 34px;
+  }
+
+  *,
+  ::before,
+  ::after {
+    corner-shape: squircle;
+  }
+
+  .rounded-full {
+    corner-shape: round;
+  }
 }

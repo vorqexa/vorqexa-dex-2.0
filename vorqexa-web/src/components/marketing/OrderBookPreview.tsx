@@ -73,7 +73,7 @@ export function OrderBookPreview() {
       role="group"
       aria-label="Order book preview with example data"
       style={{ "--d": "200ms" } as React.CSSProperties}
-      className="anim-fade-up mx-auto w-full max-w-[720px] min-w-0 overflow-hidden rounded-[10px] border border-line bg-panel tablet:mx-0 tablet:max-w-none"
+      className="anim-fade-up mx-auto w-full max-w-[720px] min-w-0 overflow-hidden rounded-card border border-line bg-panel tablet:mx-0 tablet:max-w-none"
     >
       <div className="flex items-center justify-between gap-3 border-b border-line p-3.5 phone:px-[18px] phone:py-4">
         <div className="flex min-w-0 flex-wrap items-center gap-2 text-[14.5px] font-semibold">

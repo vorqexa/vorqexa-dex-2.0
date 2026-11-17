@@ -49,7 +49,7 @@ export function DocsNav({ items }: { items: readonly Item[] }) {
   return (
     <nav
       aria-label="Documentation"
-      className="rounded-xl border border-line bg-panel p-4 tablet:border-0 tablet:bg-transparent tablet:p-0"
+      className="rounded-panel border border-line bg-panel p-4 tablet:border-0 tablet:bg-transparent tablet:p-0"
     >
       <p className="mb-3 text-xs font-medium uppercase tracking-[0.12em] text-muted">
         Documentation
